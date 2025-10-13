@@ -1,17 +1,147 @@
 ---
-title: Components
-description: Components
+title: "Components"
+description: "Step-by-step guide for Nepdora using Next.js and Fumadocs-compatible MDX. Learn to add categories, subcategories, and products before building your site with the website builder."
 ---
 
-## Code Block
+# Nepdora — Complete Setup Guide
 
-```js
-console.log('Hello World');
+Follow this streamlined process to set up your Nepdora store: **add data first → build your website**.
+
+## Workflow Overview
+
+**Phase 1: Data Setup** (Must do first)
+1. Create main categories
+2. Add subcategories (optional but recommended)
+3. Add products and assign categories
+4. Review and verify all data
+
+**Phase 2: Website Building** (After data is ready)
+1. Open Website Builder
+2. Create pages using your categories/products
+3. Customize design and layout
+4. Preview and publish
+
+## Phase 1: Add Categories & Products First
+
+### 1. Create Categories
+
+Categories are the foundation of your store's navigation. Create them first in your Nepdora admin.
+
+**Via Admin UI:**
+`Catalog → Categories → Add Category`
+
+**Tips:**
+- Use short, SEO-friendly slugs (`/clothing`, `/electronics`)
+- Add a category image if your theme supports banners
+- Think about your main product groupings
+
+### 2. Add Subcategories (Optional but Recommended)
+
+Subcategories help organize products within categories and improve user navigation.
+
+**Via Admin UI:**
+`Catalog → Categories → Select Parent → Add Subcategory`
+
+**Example JSON:**
+```json
+{
+  "name": "T-Shirts",
+  "slug": "t-shirts",
+  "parentCategoryId": "<clothing-category-id>"
+}
 ```
 
-## Cards
+### 3. Add Products
 
-<Cards>
-  <Card title="Learn more about Next.js" href="https://nextjs.org/docs" />
-  <Card title="Learn more about Fumadocs" href="https://fumadocs.dev" />
-</Cards>
+Now add your products and assign them to categories/subcategories.
+
+**Minimum Fields Required:**
+- title / name
+- SKU (unique identifier)
+- price (with currency)
+- categoryId or slug
+- images (array of URLs)
+- description
+
+
+**Bulk Import Option:**
+Use CSV with headers: `title,sku,price,currency,category,subcategory,images,stock,description`
+
+### 4. Verify Your Data
+
+Before building your website, ensure everything is correct:
+
+**From Admin → Products → Edit:**
+- Images load correctly
+- Category assignments are right
+- Pricing and descriptions are accurate
+- SEO fields are filled
+
+## Phase 2: Build Your Website
+
+**Important:** Only proceed to website building after your categories and products are set up and verified.
+
+### Open Website Builder
+
+After your data is ready, go to **Website Builder** in your Nepdora admin.
+
+### Create Pages
+
+1. **Category Listing Pages**
+   - Use the **Category Listing** template
+   - Connect to your category slugs
+   - Display products in that category
+
+2. **Product Detail Pages**
+   - Use the **Product Page** template
+   - Connect to specific product SKUs
+   - Show product images, descriptions, pricing
+
+### Customize Your Site
+
+**Data Mapping:**
+- **Hero Section:** `product.images[0]` or `category.image`
+- **Product Title:** `product.title`
+- **Price Display:** `product.price + " " + product.currency`
+- **Description:** `product.description`
+- **Add to Cart:** `product.sku`
+
+**Navigation & Filters:**
+- Add sidebar filters for subcategories
+- Include price range filters
+- Set up search functionality
+- Create navigation menus pointing to category pages
+
+### Preview & Publish
+
+- Use **Preview Mode** to test on mobile & desktop
+- Test the complete user journey (browse → product → cart → checkout)
+- Click **Publish** when everything looks good
+
+## Common Mistakes to Avoid
+
+**Don't skip data setup** - Website builder won't work well without proper categories and products
+**Don't use inconsistent slugs** - Changing them later breaks links
+**Don't forget images** - Visuals are crucial for e-commerce
+**Don't skip testing** - Always preview before publishing
+
+## Pro Tips
+
+- **Staging First:** Use a staging environment for testing
+- **Product Tags:** Add tags like `bestseller`, `new-arrival` for better organization
+- **Mobile Optimization:** Always test on mobile devices
+- **SEO:** Fill out all SEO fields for better search rankings
+
+## Quick Reference
+
+
+
+**Website Building Checklist:**
+- [ ] Categories and products are ready
+- [ ] Pages created in Website Builder
+- [ ] Design customized
+- [ ] Previewed and tested
+- [ ] Published successfully
+
+This guide ensures you have a solid data foundation before building your website, making the process smoother and more successful!
+
