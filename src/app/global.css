@@ -1,3 +1,23 @@
 @import 'tailwindcss';
 @import 'fumadocs-ui/css/neutral.css';
 @import 'fumadocs-ui/css/preset.css';
+
+/* app/globals.css */
+.fumadocs-toc a {
+  color: #a1a1aa;
+  transition: color 0.2s;
+}
+
+.fumadocs-toc a:hover,
+.fumadocs-toc a.active {
+  color: #c084fc;
+}
+
+.fumadocs-toc li {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 0.75rem;
+}
+
+.fumadocs-sidebar {
+  width: 20rem;
+}
