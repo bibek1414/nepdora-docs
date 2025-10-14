@@ -1,0 +1,7 @@
+{
+  "title": "Website Builder",
+  "description": "",
+  "root": true,
+  "icon": "BookOpen",
+  "pages": ["page-template","hero-section","about-us","navbar","footer","services","team-members","testimonials","youtube-videos","product-management"]
+}
