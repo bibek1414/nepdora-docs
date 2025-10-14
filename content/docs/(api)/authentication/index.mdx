@@ -1,0 +1,46 @@
+---
+title: Authentication
+description: User authentication and authorization endpoints
+---
+
+# Authentication
+
+The authentication API provides endpoints for user login, registration, and password management.
+
+## Overview
+
+Authentication is required for most API endpoints. This section covers:
+
+- User registration and signup
+- Login and session management
+- Password changes and resets
+- Email verification
+
+## Endpoints
+
+### User Registration
+
+- `POST /api/signup/` - Create a new user account
+- `POST /api/verify_email/` - Verify email address
+
+### User Login
+
+- `POST /api/customer_login/` - Authenticate user credentials
+
+### Password Management
+
+- `POST /api/change_password/` - Update user password
+- `POST /api/resend_verification/` - Resend verification email
+
+## Authentication Flow
+
+1. **Registration**: User signs up with email and password
+2. **Email Verification**: User clicks verification link in email
+3. **Login**: User authenticates with credentials
+4. **Access**: User receives JWT token for API access
+
+## Security
+
+- All passwords are hashed using bcrypt
+- JWT tokens expire after 24 hours
+- Rate limiting applies to authentication endpoints

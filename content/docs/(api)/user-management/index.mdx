@@ -1,0 +1,52 @@
+---
+title: User Management
+description: User accounts, teams, and invitation management
+---
+
+# User Management
+
+Manage user accounts, team members, and invitations within your organization.
+
+## Overview
+
+The user management API allows you to:
+
+- Manage customer registrations
+- Handle team member invitations
+- Control user access and permissions
+- View user lists and details
+
+## Endpoints
+
+### Customer Management
+
+- `GET /api/customer_register/` - List customer registrations
+- `POST /api/customer_register/` - Register new customer
+
+### User Lists
+
+- `GET /api/users/` - List all users
+
+### Team Management
+
+- `GET /api/team_member/` - List team members
+- `POST /api/team_member/` - Add team member
+- `PUT /api/team_member/{id}/` - Update team member
+- `DELETE /api/team_member/{id}/` - Remove team member
+
+### Invitations
+
+- `GET /api/invite/` - List invitations
+- `POST /api/invite/` - Send invitation
+- `POST /api/invite_accept/` - Accept invitation
+- `POST /api/invite_resend/` - Resend invitation
+
+## User Roles
+
+- **Admin**: Full system access
+- **Editor**: Content management access
+- **Viewer**: Read-only access
+
+## Permissions
+
+Each user role has specific permissions for different API endpoints.

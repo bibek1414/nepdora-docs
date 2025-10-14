@@ -1,0 +1,18 @@
+{
+  "title": "System",
+  "description": "Analytics, integrations, and system utilities",
+  "pages": [
+    "index",
+    "dashboard_stats_retrieve",
+    "schema_retrieve",
+    "download_template_retrieve",
+    "publish_all_create",
+    "---Integrations---",
+    "whatsapp_list",
+    "whatsapp_create",
+    "whatsapp_retrieve",
+    "whatsapp_update",
+    "whatsapp_partial_update",
+    "whatsapp_destroy"
+  ]
+}

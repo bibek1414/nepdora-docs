@@ -1,0 +1,5 @@
+{
+  "title": "Product Management",
+  "description": "Product display and management components",
+  "pages": ["category-display", "product-display", "sub-category-display"]
+}

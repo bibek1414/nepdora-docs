@@ -1,0 +1,16 @@
+{
+  "title": "Website Builder",
+  "description": "Website builder documentation",
+  "root": true,
+  "icon": "Layout",
+  "pages": [
+    "about-us",
+    "hero-section",
+    "navbar",
+    "footer",
+    "page-template",
+    "services",
+    "youtube-videos",
+    "product-management"
+  ]
+}

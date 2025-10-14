@@ -1,0 +1,12 @@
+{
+  "title": "Authentication",
+  "description": "User authentication and authorization",
+  "pages": [
+    "index",
+    "signup_create",
+    "customer_login_create",
+    "verify_email_create",
+    "change_password_create",
+    "resend_verification_create"
+  ]
+}

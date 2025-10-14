@@ -1,4 +1,4 @@
-import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
 
 /**
  * Shared layout configurations
@@ -8,17 +8,19 @@ export function baseOptions(hideLinks?: boolean): BaseLayoutProps {
     nav: {
       title: "Nepdora",
     },
-    links: hideLinks ? [] : [
-      {
-        text: "Documentation",
-        url: "/docs",
-        active: "nested-url"
-      },
-      {
-        text: "Blog",
-        url: "/blog",
-        active: "nested-url"
-      }
-    ]
+    links: hideLinks
+      ? []
+      : [
+          {
+            text: "Documentation",
+            url: "/docs/general",
+            active: "nested-url",
+          },
+          {
+            text: "Blog",
+            url: "/blog",
+            active: "nested-url",
+          },
+        ],
   };
 }

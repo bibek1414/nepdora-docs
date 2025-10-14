@@ -1,0 +1,20 @@
+{
+  "title": "User Management",
+  "description": "User accounts, teams, and invitations",
+  "pages": [
+    "index",
+    "customer_register_create",
+    "customer_register_list",
+    "users_list",
+    "team_member_list",
+    "team_member_create",
+    "team_member_retrieve",
+    "team_member_update",
+    "team_member_partial_update",
+    "team_member_destroy",
+    "invite_list",
+    "invite_create",
+    "invite_accept_create",
+    "invite_resend_create"
+  ]
+}

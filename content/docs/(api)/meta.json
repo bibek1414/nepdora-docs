@@ -1,0 +1,15 @@
+{
+  "title": "API Reference",
+  "description": "Complete API documentation",
+  "root": true,
+  "icon": "Code",
+  "pages": [
+    "index",
+    "authentication",
+    "user-management",
+    "content-management",
+    "e-commerce",
+    "website-builder",
+    "system"
+  ]
+}
