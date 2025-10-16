@@ -3,5 +3,20 @@
   "description": "",
   "root": true,
   "icon": "BookOpen",
-  "pages": ["page-template","hero-section","about-us","navbar","footer","services","team-members","testimonials","youtube-videos","product-management"]
+  "pages": [
+    "page-template",
+    "hero-section",
+    "about-us",
+    "navbar",
+    "footer",
+    "services",
+    "team-members",
+    "testimonials",
+    "youtube-videos",
+    "product-management",
+    "blog",
+    "faq",
+    "newsletter",
+    "banner"
+  ]
 }
