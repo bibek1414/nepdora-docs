@@ -1,0 +1,7 @@
+{
+    "title": "API Documentation",
+    "description": "API documentation and guides",
+    "root": true,
+    "icon": "BookOpen",
+    "pages": ["authentication", "content-management", "e-commerce","system","website-builder","user-management","utilities"]
+}
