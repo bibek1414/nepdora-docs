@@ -1,6 +1,8 @@
 {
   "title": "API Documentation",
   "description": "Complete API reference for the application",
+  "root": true,
+  "icon": "Code",
   "categories": [
     {
       "title": "Authentication",

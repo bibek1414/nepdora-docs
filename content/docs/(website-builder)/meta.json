@@ -2,7 +2,7 @@
   "title": "Website Builder",
   "description": "",
   "root": true,
-  "icon": "BookOpen",
+  "icon": "Frame",
   "pages": [
     "page-template",
     "hero-section",
