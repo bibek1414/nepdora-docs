@@ -1,0 +1,17 @@
+{
+  "title": "Authentication",
+  "description": "User authentication and authorization endpoints",
+  "order": [
+    "signup_create.mdx",
+    "customer_register_create.mdx",
+    "customer_register_list.mdx",
+    "customer_login_create.mdx",
+    "verify_email_create.mdx",
+    "resend_verification_create.mdx",
+    "change_password_create.mdx",
+    "invite_create.mdx",
+    "invite_list.mdx",
+    "invite_resend_create.mdx",
+    "invite_accept_create.mdx"
+  ]
+}

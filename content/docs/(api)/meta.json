@@ -1,7 +1,111 @@
 {
-    "title": "API Documentation",
-    "description": "API documentation and guides",
-    "root": true,
-    "icon": "BookOpen",
-    "pages": ["authentication", "content-management", "e-commerce","system","website-builder","user-management","utilities"]
+  "title": "API Documentation",
+  "description": "Complete API reference for the application",
+  "categories": [
+    {
+      "title": "Authentication",
+      "description": "User authentication and authorization endpoints",
+      "folder": "auth"
+    },
+    {
+      "title": "Banners",
+      "description": "Banner management endpoints",
+      "folder": "banners"
+    },
+    {
+      "title": "Blogs",
+      "description": "Blog management endpoints",
+      "folder": "blogs"
+    },
+    {
+      "title": "Categories",
+      "description": "Category and subcategory management endpoints",
+      "folder": "categories"
+    },
+    {
+      "title": "Communication",
+      "description": "Communication and external service integration endpoints",
+      "folder": "communication"
+    },
+    {
+      "title": "Content Management",
+      "description": "Page and content component management endpoints",
+      "folder": "content"
+    },
+    {
+      "title": "FAQ Management",
+      "description": "Frequently Asked Questions management endpoints",
+      "folder": "faq"
+    },
+    {
+      "title": "Navigation & Layout",
+      "description": "Footer and navbar management endpoints",
+      "folder": "footer-navbar"
+    },
+    {
+      "title": "Order Management",
+      "description": "Order processing and management endpoints",
+      "folder": "orders"
+    },
+    {
+      "title": "Payment Gateway",
+      "description": "Payment processing and gateway management endpoints",
+      "folder": "payment"
+    },
+    {
+      "title": "Portfolio Management",
+      "description": "Portfolio and project showcase endpoints",
+      "folder": "portfolio"
+    },
+    {
+      "title": "Product Management",
+      "description": "Product catalog and inventory management endpoints",
+      "folder": "products"
+    },
+    {
+      "title": "Profile Management",
+      "description": "User and store profile management endpoints",
+      "folder": "profile"
+    },
+    {
+      "title": "Services",
+      "description": "Service catalog management endpoints",
+      "folder": "services"
+    },
+    {
+      "title": "Support & Issues",
+      "description": "Customer support and issue tracking endpoints",
+      "folder": "support"
+    },
+    {
+      "title": "System Administration",
+      "description": "System configuration and administration endpoints",
+      "folder": "system"
+    },
+    {
+      "title": "Tags",
+      "description": "Tag management endpoints",
+      "folder": "tags"
+    },
+    {
+      "title": "Team Management",
+      "description": "Team member management endpoints",
+      "folder": "team"
+    },
+    {
+      "title": "Testimonials",
+      "description": "Customer testimonial management endpoints",
+      "folder": "testimonials"
+    },
+    {
+      "title": "Utilities",
+      "description": "Utility and helper endpoints",
+      "folder": "utilities"
+    },
+    {
+      "title": "Wishlist",
+      "description": "Customer wishlist management endpoints",
+      "folder": "wishlist"
+    }
+  ]
 }

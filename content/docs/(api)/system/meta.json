@@ -1,0 +1,22 @@
+{
+  "title": "System Administration",
+  "description": "System configuration and administration endpoints",
+  "order": [
+    "schema_retrieve.mdx",
+    "theme_create.mdx",
+    "theme_list.mdx",
+    "theme_retrieve.mdx",
+    "theme_update.mdx",
+    "theme_partial_update.mdx",
+    "theme_destroy.mdx",
+    "theme_publish_create.mdx",
+    "domains_create.mdx",
+    "domains_list.mdx",
+    "domains_retrieve.mdx",
+    "domains_update.mdx",
+    "domains_partial_update.mdx",
+    "domains_destroy.mdx",
+    "dashboard_stats_retrieve.mdx",
+    "publish_all_create.mdx"
+  ]
+}

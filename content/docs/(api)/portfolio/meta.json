@@ -1,0 +1,24 @@
+{
+  "title": "Portfolio Management",
+  "description": "Portfolio and project showcase endpoints",
+  "order": [
+    "portfolio_category_create.mdx",
+    "portfolio_category_list.mdx",
+    "portfolio_category_retrieve.mdx",
+    "portfolio_category_update.mdx",
+    "portfolio_category_partial_update.mdx",
+    "portfolio_category_destroy.mdx",
+    "portfolio_create.mdx",
+    "portfolio_list.mdx",
+    "portfolio_retrieve.mdx",
+    "portfolio_update.mdx",
+    "portfolio_partial_update.mdx",
+    "portfolio_destroy.mdx",
+    "portfolio_tags_create.mdx",
+    "portfolio_tags_list.mdx",
+    "portfolio_tags_retrieve.mdx",
+    "portfolio_tags_update.mdx",
+    "portfolio_tags_partial_update.mdx",
+    "portfolio_tags_destroy.mdx"
+  ]
+}

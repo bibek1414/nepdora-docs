@@ -1,0 +1,20 @@
+{
+  "title": "Utilities",
+  "description": "Utility and helper endpoints",
+  "order": [
+    "bulk_upload_create.mdx",
+    "download_template_retrieve.mdx",
+    "popup_create.mdx",
+    "popup_list.mdx",
+    "popup_retrieve.mdx",
+    "popup_update.mdx",
+    "popup_partial_update.mdx",
+    "popup_destroy.mdx",
+    "popup_form_create.mdx",
+    "popup_form_list.mdx",
+    "popup_form_retrieve.mdx",
+    "popup_form_update.mdx",
+    "popup_form_partial_update.mdx",
+    "popup_form_destroy.mdx"
+  ]
+}

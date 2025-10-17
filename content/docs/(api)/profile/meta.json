@@ -1,0 +1,13 @@
+{
+  "title": "Profile Management",
+  "description": "User and store profile management endpoints",
+  "order": [
+    "store_profile_create.mdx",
+    "store_profile_list.mdx",
+    "store_profile_me_retrieve.mdx",
+    "store_profile_me_update.mdx",
+    "store_profile_me_partial_update.mdx",
+    "store_profile_me_destroy.mdx",
+    "users_list.mdx"
+  ]
+}

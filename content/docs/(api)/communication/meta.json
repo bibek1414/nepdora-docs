@@ -1,0 +1,30 @@
+{
+  "title": "Communication",
+  "description": "Communication and external service integration endpoints",
+  "order": [
+    "contact_create.mdx",
+    "contact_list.mdx",
+    "contact_retrieve.mdx",
+    "contact_update.mdx",
+    "contact_partial_update.mdx",
+    "contact_destroy.mdx",
+    "newsletter_create.mdx",
+    "newsletter_list.mdx",
+    "newsletter_retrieve.mdx",
+    "newsletter_update.mdx",
+    "newsletter_partial_update.mdx",
+    "newsletter_destroy.mdx",
+    "whatsapp_create.mdx",
+    "whatsapp_list.mdx",
+    "whatsapp_retrieve.mdx",
+    "whatsapp_update.mdx",
+    "whatsapp_partial_update.mdx",
+    "whatsapp_destroy.mdx",
+    "youtube_create.mdx",
+    "youtube_list.mdx",
+    "youtube_retrieve.mdx",
+    "youtube_update.mdx",
+    "youtube_partial_update.mdx",
+    "youtube_destroy.mdx"
+  ]
+}

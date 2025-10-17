@@ -1,0 +1,18 @@
+{
+  "title": "FAQ Management",
+  "description": "Frequently Asked Questions management endpoints",
+  "order": [
+    "faq_category_create.mdx",
+    "faq_category_list.mdx",
+    "faq_category_retrieve.mdx",
+    "faq_category_update.mdx",
+    "faq_category_partial_update.mdx",
+    "faq_category_destroy.mdx",
+    "faq_create.mdx",
+    "faq_list.mdx",
+    "faq_retrieve.mdx",
+    "faq_update.mdx",
+    "faq_partial_update.mdx",
+    "faq_destroy.mdx"
+  ]
+}

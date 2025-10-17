@@ -1,0 +1,12 @@
+{
+  "title": "Payment Gateway",
+  "description": "Payment processing and gateway management endpoints",
+  "order": [
+    "payment_gateway_list_create.mdx",
+    "payment_gateway_list_list.mdx",
+    "payment_gateway_retrieve.mdx",
+    "payment_gateway_update.mdx",
+    "payment_gateway_partial_update.mdx",
+    "payment_gateway_destroy.mdx"
+  ]
+}

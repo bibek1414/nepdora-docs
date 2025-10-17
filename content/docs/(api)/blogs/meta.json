@@ -1,0 +1,12 @@
+{
+  "title": "Blogs",
+  "description": "Blog management endpoints",
+  "order": [
+    "blogs_create.mdx",
+    "blogs_list.mdx",
+    "blogs_retrieve.mdx",
+    "blogs_update.mdx",
+    "blogs_partial_update.mdx",
+    "blogs_destroy.mdx"
+  ]
+}

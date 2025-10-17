@@ -1,0 +1,18 @@
+{
+  "title": "Banners",
+  "description": "Banner management endpoints",
+  "order": [
+    "banners_create.mdx",
+    "banners_list.mdx",
+    "banners_retrieve.mdx",
+    "banners_update.mdx",
+    "banners_partial_update.mdx",
+    "banners_destroy.mdx",
+    "banner_images_create.mdx",
+    "banner_images_list.mdx",
+    "banner_images_retrieve.mdx",
+    "banner_images_update.mdx",
+    "banner_images_partial_update.mdx",
+    "banner_images_destroy.mdx"
+  ]
+}

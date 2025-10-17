@@ -2457,7 +2457,7 @@
     "/api/footer/{id}/publish/": {
       "post": {
         "operationId": "footer_publish_create",
-        "description": "POST /api/footer/<id>/publish/\nPublishes the footer draft.",
+        "description": "POST /api/footer/<id>/publish/\nPublishes the footer draft and cleans up deleted ones.",
         "parameters": [
           {
             "in": "path",
@@ -3407,7 +3407,7 @@
     "/api/navbar/{id}/publish/": {
       "post": {
         "operationId": "navbar_publish_create",
-        "description": "POST /api/navbar/<id>/publish/\nPublishes the navbar draft.",
+        "description": "POST /api/navbar/<id>/publish/\nPublishes the navbar draft and cleans up deleted ones.",
         "parameters": [
           {
             "in": "path",
@@ -4585,6 +4585,287 @@
         "responses": {
           "200": {
             "description": "No response body"
+          }
+        }
+      }
+    },
+    "/api/payment-gateway/": {
+      "get": {
+        "operationId": "payment_gateway_list",
+        "tags": [
+          "payment-gateway"
+        ],
+        "security": [
+          {
+            "jwtAuth": []
+          },
+          {}
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Payment"
+                  }
+                }
+              }
+            },
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/payment-gateway/{id}/": {
+      "get": {
+        "operationId": "payment_gateway_retrieve",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "schema": {
+              "type": "integer"
+            },
+            "required": true
+          }
+        ],
+        "tags": [
+          "payment-gateway"
+        ],
+        "security": [
+          {
+            "jwtAuth": []
+          },
+          {}
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Payment"
+                }
+              }
+            },
+            "description": ""
+          }
+        }
+      },
+      "put": {
+        "operationId": "payment_gateway_update",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "schema": {
+              "type": "integer"
+            },
+            "required": true
+          }
+        ],
+        "tags": [
+          "payment-gateway"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Payment"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/Payment"
+              }
+            },
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Payment"
+              }
+            }
+          },
+          "required": true
+        },
+        "security": [
+          {
+            "jwtAuth": []
+          },
+          {}
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Payment"
+                }
+              }
+            },
+            "description": ""
+          }
+        }
+      },
+      "patch": {
+        "operationId": "payment_gateway_partial_update",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "schema": {
+              "type": "integer"
+            },
+            "required": true
+          }
+        ],
+        "tags": [
+          "payment-gateway"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatchedPayment"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/PatchedPayment"
+              }
+            },
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/PatchedPayment"
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "jwtAuth": []
+          },
+          {}
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Payment"
+                }
+              }
+            },
+            "description": ""
+          }
+        }
+      },
+      "delete": {
+        "operationId": "payment_gateway_destroy",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "schema": {
+              "type": "integer"
+            },
+            "required": true
+          }
+        ],
+        "tags": [
+          "payment-gateway"
+        ],
+        "security": [
+          {
+            "jwtAuth": []
+          },
+          {}
+        ],
+        "responses": {
+          "204": {
+            "description": "No response body"
+          }
+        }
+      }
+    },
+    "/api/payment-gateway/list/": {
+      "get": {
+        "operationId": "payment_gateway_list_list",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "payment_type",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "tags": [
+          "payment-gateway"
+        ],
+        "security": [
+          {
+            "jwtAuth": []
+          },
+          {}
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PaymentSmall"
+                  }
+                }
+              }
+            },
+            "description": ""
+          }
+        }
+      },
+      "post": {
+        "operationId": "payment_gateway_list_create",
+        "tags": [
+          "payment-gateway"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Payment"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/Payment"
+              }
+            },
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Payment"
+              }
+            }
+          },
+          "required": true
+        },
+        "security": [
+          {
+            "jwtAuth": []
+          },
+          {}
+        ],
+        "responses": {
+          "201": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Payment"
+                }
+              }
+            },
+            "description": ""
           }
         }
       }
@@ -11412,6 +11693,31 @@
           }
         }
       },
+      "PatchedPayment": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "readOnly": true
+          },
+          "payment_type": {
+            "$ref": "#/components/schemas/PaymentTypeEnum"
+          },
+          "secret_key": {
+            "type": "string",
+            "nullable": true,
+            "maxLength": 255
+          },
+          "merchant_code": {
+            "type": "string",
+            "nullable": true,
+            "maxLength": 255
+          },
+          "is_enabled": {
+            "type": "boolean"
+          }
+        }
+      },
       "PatchedPopUp": {
         "type": "object",
         "properties": {
@@ -12265,6 +12571,62 @@
             "readOnly": true
           }
         }
+      },
+      "Payment": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "readOnly": true
+          },
+          "payment_type": {
+            "$ref": "#/components/schemas/PaymentTypeEnum"
+          },
+          "secret_key": {
+            "type": "string",
+            "nullable": true,
+            "maxLength": 255
+          },
+          "merchant_code": {
+            "type": "string",
+            "nullable": true,
+            "maxLength": 255
+          },
+          "is_enabled": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "payment_type"
+        ]
+      },
+      "PaymentSmall": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "readOnly": true
+          },
+          "payment_type": {
+            "$ref": "#/components/schemas/PaymentTypeEnum"
+          },
+          "is_enabled": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "payment_type"
+        ]
+      },
+      "PaymentTypeEnum": {
+        "enum": [
+          "esewa",
+          "khalti"
+        ],
+        "type": "string",
+        "description": "* `esewa` - Esewa\n* `khalti` - Khalti"
       },
       "PopUp": {
         "type": "object",

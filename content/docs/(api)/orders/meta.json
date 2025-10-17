@@ -1,0 +1,14 @@
+{
+  "title": "Order Management",
+  "description": "Order processing and management endpoints",
+  "order": [
+    "order_create.mdx",
+    "order_list.mdx",
+    "order_retrieve.mdx",
+    "order_update.mdx",
+    "order_partial_update.mdx",
+    "order_destroy.mdx",
+    "my_order_list.mdx",
+    "my_order_status_retrieve.mdx"
+  ]
+}

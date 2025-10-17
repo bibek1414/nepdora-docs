@@ -1,0 +1,18 @@
+{
+  "title": "Support & Issues",
+  "description": "Customer support and issue tracking endpoints",
+  "order": [
+    "issue_category_create.mdx",
+    "issue_category_list.mdx",
+    "issue_category_retrieve.mdx",
+    "issue_category_update.mdx",
+    "issue_category_partial_update.mdx",
+    "issue_category_destroy.mdx",
+    "issue_create.mdx",
+    "issue_list.mdx",
+    "issue_retrieve.mdx",
+    "issue_update.mdx",
+    "issue_partial_update.mdx",
+    "issue_destroy.mdx"
+  ]
+}

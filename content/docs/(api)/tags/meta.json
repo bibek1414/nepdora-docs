@@ -1,0 +1,12 @@
+{
+  "title": "Tags",
+  "description": "Tag management endpoints",
+  "order": [
+    "tags_create.mdx",
+    "tags_list.mdx",
+    "tags_retrieve.mdx",
+    "tags_update.mdx",
+    "tags_partial_update.mdx",
+    "tags_destroy.mdx"
+  ]
+}

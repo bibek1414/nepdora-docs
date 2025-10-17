@@ -1,0 +1,12 @@
+{
+  "title": "Testimonials",
+  "description": "Customer testimonial management endpoints",
+  "order": [
+    "testimonial_create.mdx",
+    "testimonial_list.mdx",
+    "testimonial_retrieve.mdx",
+    "testimonial_update.mdx",
+    "testimonial_partial_update.mdx",
+    "testimonial_destroy.mdx"
+  ]
+}

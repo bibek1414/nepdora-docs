@@ -1,0 +1,20 @@
+{
+  "title": "Content Management",
+  "description": "Page and content component management endpoints",
+  "order": [
+    "pages_create.mdx",
+    "pages_list.mdx",
+    "pages_retrieve.mdx",
+    "pages_update.mdx",
+    "pages_partial_update.mdx",
+    "pages_destroy.mdx",
+    "pages_publish_create.mdx",
+    "pages_components_create.mdx",
+    "pages_components_list.mdx",
+    "pages_components_retrieve.mdx",
+    "pages_components_update.mdx",
+    "pages_components_partial_update.mdx",
+    "pages_components_destroy.mdx",
+    "pages_components_publish_create.mdx"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Services",
+  "description": "Service catalog management endpoints",
+  "order": [
+    "service_create.mdx",
+    "service_list.mdx",
+    "service_retrieve.mdx",
+    "service_update.mdx",
+    "service_partial_update.mdx",
+    "service_destroy.mdx"
+  ]
+}

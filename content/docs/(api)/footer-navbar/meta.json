@@ -1,0 +1,20 @@
+{
+  "title": "Navigation & Layout",
+  "description": "Footer and navbar management endpoints",
+  "order": [
+    "navbar_create.mdx",
+    "navbar_retrieve.mdx",
+    "navbar_retrieve_2.mdx",
+    "navbar_update.mdx",
+    "navbar_partial_update.mdx",
+    "navbar_destroy.mdx",
+    "navbar_publish_create.mdx",
+    "footer_create.mdx",
+    "footer_retrieve.mdx",
+    "footer_retrieve_2.mdx",
+    "footer_update.mdx",
+    "footer_partial_update.mdx",
+    "footer_destroy.mdx",
+    "footer_publish_create.mdx"
+  ]
+}

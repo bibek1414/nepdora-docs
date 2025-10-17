@@ -1,0 +1,12 @@
+{
+  "title": "Team Management",
+  "description": "Team member management endpoints",
+  "order": [
+    "team_member_create.mdx",
+    "team_member_list.mdx",
+    "team_member_retrieve.mdx",
+    "team_member_update.mdx",
+    "team_member_partial_update.mdx",
+    "team_member_destroy.mdx"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Product Management",
+  "description": "Product catalog and inventory management endpoints",
+  "order": [
+    "product_create.mdx",
+    "product_list.mdx",
+    "product_retrieve.mdx",
+    "product_update.mdx",
+    "product_partial_update.mdx",
+    "product_destroy.mdx",
+    "product_image_create.mdx",
+    "product_image_list.mdx",
+    "product_image_retrieve.mdx",
+    "product_image_update.mdx",
+    "product_image_partial_update.mdx",
+    "product_image_destroy.mdx",
+    "product_review_create.mdx",
+    "product_review_list.mdx",
+    "product_review_retrieve.mdx",
+    "product_review_update.mdx",
+    "product_review_partial_update.mdx",
+    "product_review_destroy.mdx"
+  ]
+}

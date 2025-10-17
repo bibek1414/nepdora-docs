@@ -1,0 +1,12 @@
+{
+  "title": "Wishlist",
+  "description": "Customer wishlist management endpoints",
+  "order": [
+    "wishlist_create.mdx",
+    "wishlist_list.mdx",
+    "wishlist_retrieve.mdx",
+    "wishlist_update.mdx",
+    "wishlist_partial_update.mdx",
+    "wishlist_destroy.mdx"
+  ]
+}
