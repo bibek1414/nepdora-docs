@@ -13,11 +13,6 @@ export function baseOptions(hideLinks?: boolean): BaseLayoutProps {
         text: "Documentation",
         url: "/docs",
         active: "nested-url"
-      },
-      {
-        text: "Blog",
-        url: "/blog",
-        active: "nested-url"
       }
     ]
   };
