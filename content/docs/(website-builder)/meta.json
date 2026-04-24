@@ -4,6 +4,7 @@
   "root": true,
   "icon": "Frame",
   "pages": [
+    "builder-basics",
     "page-template",
     "hero-section",
     "about-us",
